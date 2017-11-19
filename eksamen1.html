@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EKSaMEn</title>
+<script>
+	window.onload=oppstart;
+  function oppstart(){
+  	  var arr=[2,3,5,76,4,2];
+  	 document.getElementById("utskrift").innerHTML = maks(arr);
+  	 document.getElementById("utskrift2").innerHTML = partall(2,2);
+  	 document.getElementById("utskrift3").innerHTML = minst(arr);
+  	document.getElementById("utskrift4").innerHTML =storsteogminste(arr);
+	
+  }
+
+	function maks(arr){
+    
+		var maks = arr[0];
+		for(var i = 0; i< arr.length; i++){
+			if(arr[i] > maks){
+				maks=arr[i];
+
+			}
+console.log(maks);
+		}
+     return maks;
+
+    
+    
+	}
+
+	function partall(tall1 , tall2){
+		var sjekk= tall1 + tall2;
+		if(sjekk%2===0){
+		return sjekk;
+		}
+		
+	}
+
+	function minst(arr){
+    
+     var minst = 10000;
+
+     for (var i= 0; i < arr.length; i++){
+     	if (arr[i] < minst){
+     		minst=arr[i];
+     	}
+
+     }
+     return minst;
+	}
+
+	function storsteogminste(arr){
+		var sum = minst + maks;
+		return sum;
+
+}
+</script>
+<body>
+	<p id="utskrift"></p>
+	<p id="utskrift2"></p>
+	<p id="utskrift3"></p>
+	<p id="utskrift4"></p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Oppgave 6.5</title>
+<script>
+	window.onload=oppstart;
+	var tall = [4,5,2,3,4,6,1,2,0,9,7,6,8,5,6,4,2,3,4,7,3];
+        var en = 0;
+        var to = 0;
+        var tre = 0;
+	function oppstart(){
+		
+		for (var i=0; i < tall.length; i++){
+			for (var j=0; j < tall.length; j++){
+			if(tall[i] == tall[j]){
+				en++;
+				 document.getElementById('utskrift').innerHTML=en;
+		
+	}
+}
+}
+}
+</script>
+</head>
+<body>
+	<p id="utskrift">En</p>
+	<p id="utskrift1">En</p>
+	<p id="utskrift2">En</p>
+	<p id="utskrift3">En</p>
+	<p id="utskrift4">En</p>
+	<p id="utskrift5">En</p>
+	<p id="utskrift6">En</p>
+	<p id="utskrift7">En</p>
+	<p id="utskrift8">En</p>
+</body>
+</html>
